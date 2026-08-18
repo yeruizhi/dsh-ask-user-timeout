@@ -32,6 +32,11 @@
     "guard",
     "timeout"
   ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
   "scripts": {
     "build": "rm -rf lib && tsc -p tsconfig.json && tsc -p tsconfig.json --emitDeclarationOnly false --outDir lib --declaration false --module esnext --moduleResolution bundler"
   },
