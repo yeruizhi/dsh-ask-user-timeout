@@ -1,0 +1,10 @@
+# dsh-ask-user-timeout bundle for DeepSeek Harness (dsh).
+# Inserted into the profile's composition when this bundle is installed
+# (`dsh plugin --profile web add git+https://github.com/<you>/dsh-ask-user-timeout.git`).
+# The plugin row resolves the package by name through the profile's node_modules;
+# the host half wraps ask_user_question with a bounded lifetime.
+- insert:
+    - id: ask-user-timeout
+      name: 'dsh-ask-user-timeout'
+      config:
+        timeoutMs: 600000
