@@ -15,7 +15,7 @@ This plugin wraps `ask_user_question`'s execution with a cooperative deadline (t
 
 ```sh
 # public GitHub install (works without an npm account)
-dsh plugin --profile web add git+https://github.com/<you>/dsh-ask-user-timeout.git
+dsh plugin --profile web add git+https://github.com/yeruizhi/dsh-ask-user-timeout.git
 ```
 
 Restart `dsh web`, then hard-refresh the browser. The wrapper applies to `ask_user_question` calls in sessions created after the plugin loads.
